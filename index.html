@@ -19,9 +19,23 @@
             <div class="inner-circle-line"></div>
         </div>
         <div class="lower-door">
-            <button> OPEN </button>
-            <button> CLOSE </button>
+            <button id="btn-open"> OPEN </button>
+            <button id="btn-close"> CLOSE </button>
         </div>
     </div>
+
+    <script>
+      window.onload = function(){
+	
+    var btn = document.getElementById('my-btn');
+    btn.onclick = function(event){
+		btn.children[0].classList.add('spin-animation');
+        setTimeout(function(){
+        	btn.children[0].classList.remove('spin-animation');
+        }, 500);
+    }
+    
+}
+    </script>
 </body>
 </html>
