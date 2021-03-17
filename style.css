@@ -65,7 +65,7 @@ body {
     bottom: 0px;
     transform: rotate(45deg);
     z-index: 1;
-    animation: rotate-left 7s 1, active-fill 30s 1;
+    animation: rotate-left 7s 1, active-fill 35s 1;
     animation-fill-mode: forwards;
 }
 
@@ -85,7 +85,7 @@ body {
     left: 27px;
     bottom: 0px;
     z-index: 2;
-    animation: rotate-right 5s 1, active-fill 30s 1;
+    animation: rotate-right 5s 1, active-fill 35s 1;
     animation-fill-mode: forwards;
     
 }
