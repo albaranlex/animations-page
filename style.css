@@ -1,0 +1,85 @@
+body {
+    background-color: dimgray;
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: 50% 0% 50%;
+    vertical-align: center;
+    justify-items: center;
+    margin: 100px auto;
+    height: 500px;
+    width: 800px;
+}
+
+.upper-door, .lower-door {
+    border: 1px solid white;
+    background-color: #1c1c1c;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.circle {
+    display: flex;
+    z-index: 1;
+    position: relative;
+    left: -45px;
+    box-shadow: 10px 5px 5px red;
+}
+
+.outer-circle, .inner-circle {
+    justify-content: center;
+    align-self: center;
+    background-color: #1c1c1c;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.outer-circle {
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+
+}
+
+.outer-circle-line {
+    background-color: white;
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.inner-circle {
+    width: 50px;
+    height: 50px;
+    left: 25px;
+    z-index: 2;
+}
+
+.inner-circle-line {
+    background-color: white;
+    width: 48px;
+    height: 2px;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 26px;
+    bottom: 0;
+    z-index: 2;
+}
+
+
+.inner-circle-line:hover {
+ transform: rotate(-45deg);
+
+
+}
+
+.outer-circle-line:hover {
+    transform: rotate(-45deg);
+    
+   
+   }
