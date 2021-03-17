@@ -7,7 +7,7 @@ body {
     grid-template-rows: 50% 0% 50%;
     vertical-align: center;
     justify-items: center;
-    margin: 100px auto;
+    margin: 50px auto;
     height: 500px;
     width: 800px;
 }
@@ -18,6 +18,11 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
+    animation-name: active;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
 
 .circle {
@@ -35,6 +40,10 @@ body {
     border: 1px solid white;
     border-radius: 50%;
     position: absolute;
+    animation-name: active;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
 }
 
 .outer-circle {
@@ -51,7 +60,7 @@ body {
     position: absolute;
     transform: rotate(45deg);
     z-index: 1;
-    animation: rotate-left 10s 1;
+    animation: rotate-left 7s 1;
     animation-fill-mode: forwards;
 }
 
@@ -71,14 +80,28 @@ body {
     left: 27px;
     bottom: -1;
     z-index: 2;
-    animation: rotate-right 10s 1;
+    animation: rotate-right 5s 1 ;
     animation-fill-mode: forwards;
+    
 }
 
 @keyframes rotate-left {
-    50% {transform: rotate(-180deg);}
-  }
+    0% {
+        transform: rotate(0deg); 
+    } 100% { 
+        transform: rotate(180deg); 
+    }
+}
 
 @keyframes rotate-right {
-    50% {transform: rotate(180deg);}
-  }
+    from {
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(-180deg); 
+
+    }
+}
+
+@keyframes active {
+    100% {border: 1px solid yellow;}
+}
