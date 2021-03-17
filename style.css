@@ -28,12 +28,32 @@ body {
     animation-fill-mode: forwards;
 }
 
+.lower-door {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-door button {
+    background-color: #1c1c1c;
+    border: 1px white solid;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin: 0 40px;
+}
+
+button:hover {
+    background-color: red;
+    cursor: pointer;
+}
 
 .circle {
     display: flex;
     z-index: 1;
     position: relative;
-    left: -45px;
+    left: -50px;
     box-shadow: 10px 5px 5px red;
 }
 
