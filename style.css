@@ -19,7 +19,7 @@ body {
 }
 
 .upper-door {
-    border-bottom: 1px solid #e6e4e4;
+    border-bottom: 1px solid #535252;
     animation-name: active-bottom;
     animation-duration: 3s;
     animation-delay: 6s;
@@ -64,7 +64,7 @@ button:hover {
     justify-content: center;
     align-self: center;
     background-color: #ffffff;
-    border: 1px solid #e6e4e4;
+    border: 1px solid #535252;
     border-radius: 50%;
     position: absolute;
     animation-name: active-line;
@@ -81,7 +81,7 @@ button:hover {
 }
 
 .outer-circle-line {
-    background-color: #e6e4e4;
+    background-color: #535252;
     width: 100px;
     height: 1px;
     position: absolute;
@@ -100,7 +100,7 @@ button:hover {
 }
 
 .inner-circle-line {
-    background-color: #e6e4e4;
+    background-color: #535252;
     width: 48px;
     height: 1px;
     position: absolute;
