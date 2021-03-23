@@ -19,15 +19,21 @@
             <div class="inner-circle-line"></div>
         </div>
         <div class="lower-door">
-            <button id="open" onclick="ani()"> OPEN </button>
-            <button class="btn-close"> CLOSE </button>
+            <button id="open" onclick="startAnimation()"> OPEN </button>
+            <button id="close" onclick="resetAnimation()"> CLOSE </button>
         </div>
     </div>
 
     <script type="text/javascript">
-        function ani(){
-          document.getElementById('outer-circle-line').className ='open';
-        }
+   function startAnimation() {
+    document.querySelector(".outer-circle-line").style.animationPlayState = "running";
+    document.querySelector(".inner-circle-line").style.animationPlayState = "running";
+   };
+
+   function resetAnimation() {
+    document.querySelector(".outer-circle-line").style.animation = "rotate-right";
+    document.querySelector(".inner-circle-line").style.animation = "rotate-left";
+   }
       </script>
 </body>
 </html>

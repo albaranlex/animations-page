@@ -90,6 +90,7 @@ button:hover {
     z-index: 1;
     animation: rotate-left 7s 1, active-fill 35s 1;
     animation-fill-mode: forwards;
+    animation-play-state: paused;
 }
 
 .inner-circle {
@@ -110,6 +111,7 @@ button:hover {
     z-index: 2;
     animation: rotate-right 5s 1, active-fill 35s 1;
     animation-fill-mode: forwards;
+    animation-play-state: paused;
     
 }
  
